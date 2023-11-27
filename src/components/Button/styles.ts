@@ -15,4 +15,5 @@ export const ButtonContainer = styled.button<IButtonStyled>`
         opacity: 0.6;
         cursor:pointer;
     }
+    ${(disabled) => !disabled && 'opacity: 0.5; cursor: not-allowed;'}
 `

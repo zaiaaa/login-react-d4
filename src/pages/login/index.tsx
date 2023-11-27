@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import Input from "../../components/Input";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { Index } from "../../components/test";
 
 import { Container, LoginContainer, Column, Spacing, Title } from "./styles";
 import { IFormLogin, defaultValues } from "./typess";
@@ -53,8 +54,9 @@ const Login = () => {
           />
           <Spacing />
           
-          <Button title="Entrar" disabled={!isValid} />
-          
+          <Button title="Entrar" disabled={true} />
+          <Index disabled={!isValid} />
+
         </Column>
       </LoginContainer>
     </Container>
